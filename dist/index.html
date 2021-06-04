@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./fontawesome-free-5.11.2-web/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        
+    <!-- amCharts javascript sources -->
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/black.js"></script>
+		
+
+
+
+
+<link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body class="bg-dark">
+
+    <!-- Navbar -->
+    <div class="nav bg-main">
+        <p class="m-2">Dashboard</p>
+       <div class="content">
+        <div class="input-group m-1"> 
+            <input type="text">
+           <span><i class="fas fa-search"></i></span>
+       </div>
+          <div class="icon-group">
+            <i class="fas fa-bell m-1">
+                <span class="badge badge-danger badge-round ">4</span>
+            </i>
+            <i class="fas fa-envelope bg-dark m-1">
+                <span class="badge badge-warning badge-round  ">1</span>
+            </i> 
+          </div>   
+       </div>
+            <div class="img-contact m-2">
+                <img src="./img/image.png " class="nav-image m-1" alt="">
+                <span>Hi, Robert <i class="fas fa-chevron-down m-1" style="cursor: pointer;"></i> </span>
+            </div>
+    </div>
+
+    <!-- Section -->
+    <div class="section">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#dashboard" class="">
+                        <i class="fas fa-tachometer-alt m-1" style="opacity: 1;"></i> Dashboard</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#charts" class=" ">
+                        <i class="fas fa-tachometer-alt m-1"></i> Charts</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#Tasks" class=" ">
+                        <i class="fas fa-align-justify m-1"></i></i> Tasks</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#Comment" class=" ">
+                        <i class="fas fa-comment m-1"></i> Comment</a>
+                        <span class="badge badge-warning badge-round  ">9</span>
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#Setting" class=" ">
+                        <i class="fas fa-cog m-1"></i> Setting</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#FeedBack" class=" ">
+                        <i class="fas fa-star m-1"></i> Feedback</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#links" class=" ">
+                        <i class="fas fa-link m-1"></i> Links</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#social" class=" ">
+                        <i class="fas fa-share-alt m-1"></i> Social</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#mail" class=" ">
+                        <i class="fas fa-envelope m-1"></i> Mail</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#Achievement" class=" ">
+                        <i class="fas fa-trophy m-1"></i> Achievement</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#logOut" class=" ">
+                        <i class="fas fa-power-off m-1"></i> Logout</a> 
+                    <i class="fas fa-chevron-right lastIcon "></i>
+                </li>
+                <li>
+                    <a href="#collapseMenu" class="py-1 ">
+                        <i class="fas fa-caret-square-left m-1"></i> Collapse Menu</a> 
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="mainly">
+
+            <!-- body-top -->
+
+            <div class="main m-1" >   
+                <div class="box">
+                    <div class="percent">
+                        <svg style=" background-color: #66B7F0;">
+                            <circle cx="45" cy="45" r="45" style="stroke:#D2E6F4;"></circle>
+                            <circle cx="45" cy="45" r="45" style="stroke:#f6f6f6;"></circle>
+                        </svg>
+                        <div class="number">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                    <span class="m-1">
+                        <h3>400</h3>
+                        <p>Mentioned</p>
+                    </span>
+                </div>
+                <div class="box">
+                    <div class="percent">
+                        <svg style=" background-color: #A5C562;">
+                            <circle cx="45" cy="45" r="45" style="stroke:#E2EAD0;"></circle>
+                            <circle cx="45" cy="45" r="45" style="stroke:#f6f6f6;"></circle>
+                        </svg>
+                        <div class="number">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                    </div>
+                    <span class="m-1">
+                        <h3>400</h3>
+                        <p>Mentioned</p>
+                    </span>
+                </div>
+                <div class="box">
+                    <div class="percent">
+                        <svg style="background-color:#FF503F">
+                            <circle cx="45" cy="45" r="45" style="stroke:#F7D7D3;"></circle>
+                            <circle cx="45" cy="45" r="45" style="stroke:#f6f6f6;"></circle>
+                        </svg>
+                        <div class="number">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <span class="m-1">
+                        <h3>400</h3>
+                        <p>Mentioned</p>
+                    </span>
+                </div>
+                <div class="box">
+                    <div class="percent">
+                        <svg style="background-color: #F6BB42;">
+                            <circle cx="45" cy="45" r="45" style="stroke:#F6E7C9;"></circle>
+                            <circle cx="45" cy="45" r="45" style="stroke:#f6f6f6;"></circle>
+                        </svg>
+                        <div class="number">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <span class="m-1">
+                        <h3>400</h3>
+                        <p>Mentioned</p>
+                    </span>
+                </div>
+    
+            </div>
+
+            
+            <div class="main-block p-2">
+            <!-- charts -->
+            <div class="chart-left">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="left-bar">
+                <canvas id="myChart2"></canvas>
+                <div class="progres-block">
+                    <span >
+                        <h3>536,030 $</h3>
+                        <p>Yearly Sales</p>
+                       <div>
+                        <hr class="spanP">
+                        <hr class="progress" style="width: 60%;">
+                       </div>
+                    </span>
+                    <span >
+                        <h3 style="color:#8CC152">4204284 $</h3>
+                        <p>Yearly Visitors</p>
+                       <div>
+                        <hr class="spanP">
+                        <hr class="progress" style="background-color: #8CC152; width: 40%;">
+                       </div>
+                    </span>
+                    <span >
+                        <h3 style="color: #66B7F0;">42000 $</h3>
+                        <p>Yearly Sales</p>
+                       <div>
+                        <hr class="spanP">
+                        <hr class="progress" style="background-color: #73CAA7; width: 80%;">
+                       </div>
+                    </span>
+                </div>
+
+            </div>
+
+          
+        </div>
+  <!-- To do list section -->
+
+  <section class="ToDoList">
+    
+        <div class="section-card">
+           
+            <div class="section-block">
+            <div class="todo-top p-1">        
+                <p>ToDo List </p>
+                <a href="#" style="color:white;"><i class="fas fa-plus"></i></a>
+            </div>
+
+            <!-- Alerts -->
+
+            <div class="alertGroup">
+                <div class="alert p-1">
+                    <a href="#"> <i class="fas fa-braille"></i></a>
+                   <span class="iconList">
+                    <p class="">
+                        Do your ToDo List today at 6AM GMT
+                    </p>
+                    <span>
+                        <a href="#"><i class="fas fa-check"></i></a>
+                    <a href="#"><i class="fas fa-times"> </i></a>
+                    </span>
+                   </span>
+                </div>
+                <div class="alert p-1">
+                    <a href="#"> <i class="fas fa-braille"></i></a>
+                   <span class="iconList">
+                    <p class="">
+                        Do your ToDo List today at 6AM GMT
+                    </p>
+                    <span>
+                        <a href="#"><i class="fas fa-check"></i></a>
+                    <a href="#"><i class="fas fa-times"> </i></a>
+                    </span>
+                   </span>
+                </div>
+                <div class="alert p-1">
+                    <a href="#"> <i class="fas fa-braille"></i></a>
+                   <span class="iconList">
+                    <p class="">
+                        Do your ToDo List today at 6AM GMT
+                    </p>
+                    <span>
+                        <a href="#"><i class="fas fa-check"></i></a>
+                    <a href="#"><i class="fas fa-times"> </i></a>
+                    </span>
+                   </span>
+                </div>
+                <div class="alert p-1">
+                    <a href="#"> <i class="fas fa-braille"></i></a>
+                   <span class="iconList">
+                    <p class="">
+                        Do your ToDo List today at 6AM GMT
+                    </p>
+                    <span>
+                        <a href="#"><i class="fas fa-check"></i></a>
+                    <a href="#"><i class="fas fa-times"> </i></a>
+                    </span>
+                   </span>
+                </div>
+            </div>
+           </div>
+           
+           <div class="progres-block">
+            <span >
+                <h3>536,030 $</h3>
+                <p>Yearly Sales</p>
+               <div>
+                <hr class="spanP">
+                <hr class="progress" style="width: 60%;">
+               </div>
+            </span>
+            <span >
+                <h3 style="color:#8CC152">4204284 $</h3>
+                <p>Yearly Visitors</p>
+               <div>
+                <hr class="spanP">
+                <hr class="progress" style="background-color: #8CC152; width: 40%;">
+               </div>
+            </span>
+        
+        
+        
+        
+        
+        </div>
+          
+        <div class="todo-top p-1" style="margin-top: 1rem; background-color: #FAFAFA; color: #777;">        
+            <p>Notification </p>
+            <a href="#" style="color:white;"><i class="fas fa-cog " style="color: #777;"></i></a>
+        </div>
+      
+        <div style="background-color: white; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+
+            <div class=" p-1 " style="width: 100%; display: flex; align-items: center; justify-content: space-between;">
+                <span class=" square p-1 " style="width: 10.5%; position: relative; color: white; background-color: #66B7F0; border-radius: 60%;" ><i class="fab fa-twitter fa-2x"></i></span>
+                <span class=" p-1" style="width: 85%; z-index: 999;  right: 1rem; border-radius: 10px; background-color: #66B7F0; color: white; " >
+                    <p>There are 5 new twitter messages are waiting for you reply them!</p>
+                </span>
+            </div>
+            <div class=" p-1" style="width: 100%;  display: flex; align-items: center; justify-content: space-between;">
+                <span class="square1 p-1" style="width: 10.5%; position: relative; color: white; background-color: #F3CA7A; border-radius: 60%;" ><i class="fas fa-envelope fa-2x"></i></span>
+                <span style="width: 85%; border-radius: 10px; background-color: #F3CA7A; color: white; " class="p-1">
+                    <p>There are 5 new twitter messages are waiting for you reply them!</p>
+                </span>
+            </div>
+            <div class=" p-1" style="width: 100%;  display: flex; align-items: center; justify-content: space-between;">
+                <span class="square2 p-1" style="width: 10.5%; position: relative; color: white; background-color: #B5D07F; border-radius: 50%;" ><i class="fas fa-dollar-sign fa-2x" style="margin-left: 0.45rem;"></i></span>
+                <span style="width: 85%; border-radius: 10px; background-color: #B5D07F; color: white; " class="p-1">
+                    <p>There are 5 new twitter messages are waiting for you reply them!</p>
+                </span>
+            </div>
+
+        </div>
+        
+                
+       
+           
+
+         </div>
+
+    <!-- meteo & calendar-->
+    <div class="meteo ">
+       <div class="information">
+        <i class="fas fa-cloud-sun-rain fa-5x" style="color: white;"></i>
+      <p style="position: relative; font-size: 3.5rem;">   44 <i class="far fa-circle" style="font-size: 10px; position: absolute; top: 1rem;"></i> </p>
+       
+      <p style="width: 30%; font-size: 1rem;">
+            Amman <i class="fas fa-map-marker-alt"></i>
+            Sunny
+        </p>
+       </div>
+
+       <div class="calendar " >
+        <div class="month" >      
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li class="p-1">
+                June 2017<br>
+              </li>
+            </ul>
+          </div>
+          
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+          
+          <ul class="days">  
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li><span class="active">10</span></li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </ul>
+          <span class="day-bottom">
+              <a>Meet your friends today</a>
+              <button > 11:30 </button>
+          </span>
+          <span class="day-bottom">
+              <a>Tweet "thanks" for your followers</a>
+              <button > 21:00 </button>
+          </span>
+        </div>
+        <div class="todo-top p-1" style="margin-top: 2rem;">        
+            <p>Data graph </p>
+            <a href="#" style="color:white;"><i class="fas fa-cog"></i></a>
+        </div>
+        <div  id="chartdiv" style="width: 100%; height: 200px; background-color: #9972B5; border-bottom-left-radius: 8px; 
+        border-bottom-right-radius: 8px;"></div>
+        
+         </div>
+  
+    </section>
+       
+
+
+        </div>
+    </div>
+
+
+
+    <script >
+
+        // top-chart
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+       
+        
+        //left chart
+        var ctx = document.getElementById('myChart2').getContext('2d');
+
+
+        var chart = new Chart(ctx, {
+  
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(243,234,234)',
+            borderColor: 'rgb(205, 200, 222)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+       
+     </script>
+
+	<!-- amCharts javascript code -->
+    <script type="text/javascript">
+        AmCharts.makeChart("chartdiv",
+            {
+                "type": "serial",
+                "categoryField": "category",
+                "plotAreaFillColors": "#250707",
+                "startDuration": 1,
+                "theme": "black",
+                "categoryAxis": {
+                    "gridPosition": "start"
+                },
+                "trendLines": [],
+                "graphs": [
+                    {
+                        "balloonText": "[[title]] of [[category]]:[[value]]",
+                        "bullet": "round",
+                        "id": "AmGraph-1",
+                        "valueField": "column-1"
+                    },
+                    {
+                        "balloonText": "[[title]] of [[category]]:[[value]]",
+                        "bullet": "square",
+                        "id": "AmGraph-2",
+                        "valueField": "column-2"
+                    }
+                ],
+                "guides": [],
+                "valueAxes": [
+                    {
+                        "id": "ValueAxis-1",
+                        "stackType": "regular"
+                    }
+                ],
+                "allLabels": [],
+                "balloon": {},
+                "titles": [
+                    {
+                        "id": "Title-1",
+                        "size": 15,
+                        "text": "Chart Title"
+                    }
+                ],
+                "dataProvider": [
+                    {
+                        "category": "category 1",
+                        "column-2": 5
+                    },
+                    {
+                        "category": "category 2",
+                        "column-2": 7
+                    },
+                    {
+                        "category": "category 3",
+                        "column-2": 3
+                    },
+                    {
+                        "category": "category 4",
+                        "column-2": 3
+                    },
+                    {
+                        "category": "category 5",
+                        "column-2": 1
+                    },
+                    {
+                        "category": "category 6",
+                        "column-2": 2
+                    },
+                    {
+                        "category": "category 7",
+                        "column-2": 8
+                    }
+                ]
+            }
+        );
+    </script>
+
+
+</body>
+</html>
